@@ -1,0 +1,58 @@
+Toros End-User License Agreement (EULA)
+
+Copyright (c) 2026 Arda Kaan Özcan. All rights reserved.
+
+This agreement covers the Toros application ("Toros") that you download or install.
+By installing or using Toros you accept these terms. If you do not accept them, do not use Toros.
+
+1. FREE TO USE
+   You may install and use Toros, free of charge, on any number of Macs that you own or control, for personal,
+   educational or commercial purposes.
+
+2. WHAT YOU MAY NOT DO
+   a. Sell, rent, sublicense, or charge for Toros, or include it in a product or service you charge for as if it were your own.
+   b. Copy, host or redistribute Toros, or repackage it, except by pointing others to the official download
+      (https://github.com/ardakaano/toros-releases). Sharing a link is always fine.
+   c. Modify Toros, or reverse engineer, decompile or disassemble it, except to the extent that applicable law permits
+      this despite this restriction, or that a third-party licence listed in section 4 gives you that right for that component.
+   d. Remove or alter copyright, licence or attribution notices.
+   e. Use the name "Toros" or its logo in a way that suggests your product is made or endorsed by the licensor.
+
+3. OWNERSHIP
+   Toros is licensed, not sold. The licensor keeps all rights not expressly granted here. The Toros source code is not
+   licensed to you and is not published.
+
+4. THIRD-PARTY SOFTWARE
+   Toros includes open-source components (including Ghostty's terminal engine, Termini and SwiftTerm, under the MIT licence),
+   each under its own licence. The full notices are in THIRD_PARTY_NOTICES.md, inside the app bundle
+   (Toros.app/Contents/Resources) and at https://github.com/ardakaano/toros-releases.
+   Nothing in this agreement limits your rights under those licences.
+
+5. YOUR COMPUTER, YOUR COMMANDS
+   Toros runs the programs and commands you type, with your own user's permissions. You are responsible for what you run.
+   Commands can delete or change files and can affect other systems you connect to. Keep backups.
+
+6. PRIVACY
+   Toros does not require an account and, in the version this agreement came with, does not collect or transmit your data
+   or terminal contents. Programs that you run inside Toros may of course use the network.
+
+7. NO WARRANTY
+   TOROS IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. YOU USE IT AT YOUR OWN RISK.
+
+8. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR IS NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL
+   DAMAGES, OR FOR LOSS OF DATA, PROFITS OR BUSINESS, ARISING FROM THE USE OF OR INABILITY TO USE TOROS. Nothing here excludes
+   liability that cannot be excluded by law.
+
+9. TERMINATION
+   This licence ends automatically if you breach it. Then you must stop using Toros and delete your copies. Sections 3 to 8 survive.
+
+10. FUTURE VERSIONS
+    This agreement applies to the version it came with. Later versions may be offered under different terms (for example paid).
+    A version you already have stays under the terms it shipped with.
+
+11. GENERAL
+    If a provision is unenforceable, the rest stays in effect. This is the entire agreement about Toros between you and the licensor.
+
+Questions or problems: https://github.com/ardakaano/toros-releases/issues

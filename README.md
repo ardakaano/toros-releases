@@ -8,7 +8,7 @@ Real shells, GPU-accelerated rendering (Ghostty's engine), workspaces, tabs, spl
 Local-first: **no account, no telemetry, no network access** for any core feature, no AI service required.
 Works with Claude Code, OpenCode and Codex (launch tested).
 
-> **Early release (0.x).** This repository only hosts downloads, release notes and the issue tracker. Toros itself is closed-source.
+> **Early release (0.x).** This repository only hosts downloads, release notes and the issue tracker. Toros itself is closed-source and free to use ([EULA](LICENSE)).
 
 ## Install
 
@@ -45,4 +45,4 @@ Not yet verified: Intel Macs, macOS 14/15, VoiceOver. The notes of each release 
 Toros bundles open-source software; full notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and inside the app
 (`Toros.app/Contents/Resources`). Includes Ghostty's terminal engine (MIT), Termini (MIT), SwiftTerm (MIT) and others.
 Portions of this software are copyright © The FreeType Project (www.freetype.org). All rights reserved.
-Toros itself is proprietary, © 2026 Toros. All rights reserved.
+**Toros is free to use** (personal and commercial) under the [End-User License Agreement](LICENSE); it is closed-source and may not be resold or redistributed. © 2026 Arda Kaan Özcan.
