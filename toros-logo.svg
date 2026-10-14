@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="t d">
+  <title id="t">Toros</title>
+  <desc id="d">Two Taurus mountain peaks with a terminal prompt on the front peak.</desc>
+  <rect x="32" y="32" width="448" height="448" rx="104" fill="#B8A4F4"/>
+  <!-- back peak -->
+  <path d="M258 404 L350 214 Q358 198 366 214 L458 404 Z" fill="#FAF9F6" fill-opacity="0.62"/>
+  <!-- front peak -->
+  <path d="M60 404 L206 158 Q214 144 222 158 L368 404 Z" fill="#242424"/>
+  <!-- snow cap -->
+  <path d="M206 158 Q214 144 222 158 L252 209 L232 197 L214 224 L196 197 L176 209 Z" fill="#FAF9F6"/>
+  <!-- prompt: chevron + cursor -->
+  <path d="M158 306 L198 340 L158 374" fill="none" stroke="#C1FF00" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="222" y="356" width="56" height="22" rx="7" fill="#C1FF00"/>
+</svg>
