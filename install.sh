@@ -5,8 +5,8 @@
 #
 # What it does: downloads the DMG and its SHA-256, verifies the checksum, copies Toros.app to
 # /Applications (replacing an older one), and opens it. It never uses sudo.
-# Files fetched with curl are not quarantine-flagged, so the ad-hoc signed build opens without a
-# Gatekeeper prompt. (A browser download of an un-notarized build would be blocked.)
+# Files fetched with curl are not quarantine-flagged, so even an un-notarized build opens without a
+# Gatekeeper prompt. (Releases are Developer-ID signed and notarized, so browser downloads work too.)
 #
 # Options (environment variables):
 #   TOROS_VERSION=v0.1.0   install a specific release instead of the newest

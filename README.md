@@ -8,7 +8,7 @@ Real shells, GPU-accelerated rendering (Ghostty's engine), workspaces, tabs, spl
 Local-first: **no account, no telemetry, no network access** for any core feature, no AI service required.
 Works with Claude Code, OpenCode and Codex (launch tested).
 
-> **Preview release.** This repository only hosts downloads, release notes and the issue tracker. Toros itself is closed-source.
+> **Early release (0.x).** This repository only hosts downloads, release notes and the issue tracker. Toros itself is closed-source.
 
 ## Install
 
@@ -25,11 +25,10 @@ Prefer to do it by hand? Download `Toros-<version>.dmg` from [Releases](../../re
 
 **Uninstall:** delete `/Applications/Toros.app`. Your settings live in `~/Library/Application Support/Toros/` (delete it to reset).
 
-## Please read: this build is not notarized
+## Signed and notarized
 
-The preview is signed ad-hoc, not with an Apple Developer ID, and is not notarized yet. Installing with the command above works without any prompt.
-A DMG downloaded **in a browser** is quarantined by macOS and will be blocked on first open; if you go that way, run
-`xattr -dr com.apple.quarantine /Applications/Toros.app` once after copying it.
+Releases are signed with a Developer ID (`Arda Kaan Özcan, TTHQABHB4H`) and notarized by Apple, so a DMG downloaded in a browser opens without a Gatekeeper warning.
+Verify it yourself: `spctl --assess --type execute -vv /Applications/Toros.app` should print `source=Notarized Developer ID`.
 
 ## Verified, and not
 
