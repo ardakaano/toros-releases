@@ -5,7 +5,7 @@
 **The friendliest terminal for people who build things.** A native macOS terminal with a warm, minimal interface built around your projects.
 Real shells, GPU-accelerated rendering (Ghostty's engine), workspaces, tabs, split panes, git and port awareness, a command palette, and drag and drop: drop a file, folder or image on the terminal and its path is typed for you.
 
-Local-first: **no account, no telemetry, no network access** for any core feature, no AI service required.
+Local-first: **no account, no telemetry, no AI service required.** The only connection Toros makes by itself is a once-a-day check of GitHub for a newer version (see [Update](#update)); you can switch it off.
 Works with Claude Code, OpenCode and Codex (launch tested).
 
 > **Early release (0.x).** This repository only hosts downloads, release notes and the issue tracker. Toros itself is closed-source and free to use ([EULA](LICENSE)).
@@ -25,8 +25,12 @@ Prefer to do it by hand? Download `Toros-<version>.dmg` from [Releases](../../re
 
 ## Update
 
-Toros has **no auto-update and no update prompt**. Check the [Releases page](../../releases) for a newer version
-(or use *Watch → Custom → Releases* on this repository to get an email when one is published), then:
+Toros tells you when a newer version is out: an **Update Available** button appears in the title bar and opens the steps below.
+**Toros → Check for Updates…** asks right away. It does not install anything by itself.
+
+*Privacy:* once a day Toros asks `api.github.com` for this repository's latest release. The request carries your IP address and the app's name and version (`Toros/0.1.4`), nothing else: no account, no identifier, no cookies. Only stable releases are announced.
+Turn it off in **Settings → General → Privacy → Check for updates automatically**; then Toros makes no network connections of its own.
+You can also just watch the [Releases page](../../releases), or use *Watch → Custom → Releases* on this repository to get an email. To update:
 
 1. **Quit Toros** (⌘Q, also from the Dock). Quitting ends running shells and commands: tabs, splits and folders come back next time, running processes do not, so finish or stop an agent session first.
 2. **Run the install command again.** It replaces the old app with the newest release:
@@ -37,7 +41,7 @@ Toros has **no auto-update and no update prompt**. Check the [Releases page](../
    Or do it by hand: download `Toros-<version>.dmg` from Releases and drag **Toros** onto **Applications**, choosing *Replace*.
 3. **Open Toros.** Your projects, workspaces and settings are kept; they live in `~/Library/Application Support/Toros/`, not in the app.
 
-Which version do I have? **Settings (⌘,) → About** shows it.
+Which version do I have? **Settings (⌘,) → About** shows it, next to **Check for Updates…**.
 To go back to an older release: `curl -fsSL https://raw.githubusercontent.com/ardakaano/toros-releases/main/install.sh | TOROS_VERSION=v0.1.2 bash`.
 
 **Uninstall:** delete `/Applications/Toros.app`. Your settings live in `~/Library/Application Support/Toros/` (delete it to reset).

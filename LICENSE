@@ -34,7 +34,9 @@ By installing or using Toros you accept these terms. If you do not accept them, 
 
 6. PRIVACY
    Toros does not require an account and, in the version this agreement came with, does not collect or transmit your data
-   or terminal contents. Programs that you run inside Toros may of course use the network.
+   or terminal contents. Once a day Toros asks GitHub (api.github.com) whether a newer version exists; that request carries
+   only what any internet request carries (your IP address) plus the app's name and version, and you can switch it off in
+   Settings. Programs that you run inside Toros may of course use the network.
 
 7. NO WARRANTY
    TOROS IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY,
