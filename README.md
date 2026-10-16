@@ -3,7 +3,7 @@
 # Toros
 
 **The friendliest terminal for people who build things.** A native macOS terminal with a warm, minimal interface built around your projects.
-Real shells, GPU-accelerated rendering (Ghostty's engine), workspaces, tabs, split panes, git and port awareness, and a command palette.
+Real shells, GPU-accelerated rendering (Ghostty's engine), workspaces, tabs, split panes, git and port awareness, a command palette, and drag and drop: drop a file, folder or image on the terminal and its path is typed for you.
 
 Local-first: **no account, no telemetry, no network access** for any core feature, no AI service required.
 Works with Claude Code, OpenCode and Codex (launch tested).
@@ -22,6 +22,23 @@ It downloads the newest DMG, verifies its SHA-256, copies **Toros.app** to `/App
 
 Prefer to do it by hand? Download `Toros-<version>.dmg` from [Releases](../../releases), check it against the `.sha256` file
 (`shasum -a 256 -c Toros-*.dmg.sha256`), and drag Toros to Applications.
+
+## Update
+
+Toros has **no auto-update and no update prompt**. Check the [Releases page](../../releases) for a newer version
+(or use *Watch → Custom → Releases* on this repository to get an email when one is published), then:
+
+1. **Quit Toros** (⌘Q, also from the Dock). Quitting ends running shells and commands: tabs, splits and folders come back next time, running processes do not, so finish or stop an agent session first.
+2. **Run the install command again.** It replaces the old app with the newest release:
+   ```sh
+   curl -fsSL https://raw.githubusercontent.com/ardakaano/toros-releases/main/install.sh | bash
+   ```
+   If it answers *"Toros is running; quit it first"*, Toros is still open: quit it and run the command again.
+   Or do it by hand: download `Toros-<version>.dmg` from Releases and drag **Toros** onto **Applications**, choosing *Replace*.
+3. **Open Toros.** Your projects, workspaces and settings are kept; they live in `~/Library/Application Support/Toros/`, not in the app.
+
+Which version do I have? **Settings (⌘,) → About** shows it.
+To go back to an older release: `curl -fsSL https://raw.githubusercontent.com/ardakaano/toros-releases/main/install.sh | TOROS_VERSION=v0.1.2 bash`.
 
 **Uninstall:** delete `/Applications/Toros.app`. Your settings live in `~/Library/Application Support/Toros/` (delete it to reset).
 
